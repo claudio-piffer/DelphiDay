@@ -1,0 +1,2107 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup>
+        <DeviceId Condition="'$(Platform)'=='Android'">RF8N932715Z</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='Android64'">RF8N932715Z</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'"/>
+    <ItemGroup Condition="'$(Platform)'=='Android64'">
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xxxhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon18</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon18</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-ldpi\splash_image.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-ldpi\splash_image.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Release\armeabi-v7a\libyoga.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libyoga.so</RemoteName>
+            <DeployClass>FGX_YogaLibrary</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\mips\</RemoteDir>
+            <RemoteName>libEDACDemo.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Release\armeabi-v7a\libfb.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libfb.so</RemoteName>
+            <DeployClass>FGX_YogaLibraryFb</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi-v7a\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libEDACDemo.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiv7aFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon48</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon48</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon36</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon36</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Debug\arm64-v8a\libfb.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\arm64-v8a\</RemoteDir>
+            <RemoteName>libfb.so</RemoteName>
+            <DeployClass>FGX_YogaLibraryFb</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-xhdpi\splash_image.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-xhdpi\splash_image.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\DB\DemoDB\universal-universal.db3" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\DB\DemoDB\</RemoteDir>
+            <RemoteName>universal-universal.db3</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\DB\DemoDB\universal-universal.db3" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\DB\DemoDB\</RemoteDir>
+            <RemoteName>universal-universal.db3</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@10x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@10x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@20x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@20x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_192x192.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-xxxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon192</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="launch_screen.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable\</RemoteDir>
+            <RemoteName>launch_screen.xml</RemoteName>
+            <DeployClass>FGX_SplashScreenImage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="launch_screen.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable\</RemoteDir>
+            <RemoteName>launch_screen.xml</RemoteName>
+            <DeployClass>FGX_SplashScreenImage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Release\arm64-v8a\libfb.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\library\lib\arm64-v8a\</RemoteDir>
+            <RemoteName>libfb.so</RemoteName>
+            <DeployClass>FGX_YogaLibraryFb</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libEDACDemo.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\colors.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\values\</RemoteDir>
+            <RemoteName>colors.xml</RemoteName>
+            <DeployClass>Android_Colors</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Debug\armeabi-v7a\libyoga.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libyoga.so</RemoteName>
+            <DeployClass>FGX_YogaLibrary</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon96</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon96</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="styles.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidStyle</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="styles.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidStyle</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\strings.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\values\</RemoteDir>
+            <RemoteName>strings.xml</RemoteName>
+            <DeployClass>Android_Strings</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@30x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@30x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Debug\arm64-v8a\libyoga.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\arm64-v8a\</RemoteDir>
+            <RemoteName>libyoga.so</RemoteName>
+            <DeployClass>FGX_YogaLibrary</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\AndroidManifest.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="ProjectAndroidManifest" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\</RemoteDir>
+            <RemoteName>ProjectAndroidManifest</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@40x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@40x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-hdpi\splash_image.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-hdpi\splash_image.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxxhdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-xxxhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\EDACDemo.classes" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\classes\</RemoteDir>
+            <RemoteName>EDACDemo.classes</RemoteName>
+            <DeployClass>AndroidClasses</DeployClass>
+            <Operation>64</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\config-android.json" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\</RemoteDir>
+            <RemoteName>config.json</RemoteName>
+            <DeployClass>FGX_AssetsConfig</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\config-android.json" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\</RemoteDir>
+            <RemoteName>config.json</RemoteName>
+            <DeployClass>FGX_AssetsConfig</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@15x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@15x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@30x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@30x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\libEDACDemo.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\arm64-v8a\</RemoteDir>
+            <RemoteName>libEDACDemo.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Release\arm64-v8a\libyoga.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\library\lib\arm64-v8a\</RemoteDir>
+            <RemoteName>libyoga.so</RemoteName>
+            <DeployClass>FGX_YogaLibrary</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@10x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@10x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@15x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@15x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@20x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@20x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-mdpi\splash_image.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-mdpi\splash_image.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon24</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon24</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@40x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@40x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Debug\armeabi-v7a\libfb.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libfb.so</RemoteName>
+            <DeployClass>FGX_YogaLibraryFb</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Android'">
+        <DeployFile Include="Android\Debug\colors.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\values\</RemoteDir>
+            <RemoteName>colors.xml</RemoteName>
+            <DeployClass>Android_Colors</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xxxhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Release\armeabi-v7a\libfb.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libfb.so</RemoteName>
+            <DeployClass>FGX_YogaLibraryFb</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@20x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\libEDACDemo.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libEDACDemo.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@20x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@10x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@10x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-xhdpi\splash_image.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-xhdpi\splash_image.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@15x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@15x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon24</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon24</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-hdpi\splash_image.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-hdpi\splash_image.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\EDACDemo.classes" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\classes\</RemoteDir>
+            <RemoteName>EDACDemo.classes</RemoteName>
+            <DeployClass>AndroidClasses</DeployClass>
+            <Operation>64</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="launch_screen.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable\</RemoteDir>
+            <RemoteName>launch_screen.xml</RemoteName>
+            <DeployClass>FGX_SplashScreenImage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="launch_screen.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable\</RemoteDir>
+            <RemoteName>launch_screen.xml</RemoteName>
+            <DeployClass>FGX_SplashScreenImage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_192x192.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-xxxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon192</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxxhdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-xxxhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ProjectAndroidManifest" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\</RemoteDir>
+            <RemoteName>ProjectAndroidManifest</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\AndroidManifest.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\mips\</RemoteDir>
+            <RemoteName>libEDACDemo.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\strings.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\values\</RemoteDir>
+            <RemoteName>strings.xml</RemoteName>
+            <DeployClass>Android_Strings</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Release\armeabi-v7a\libyoga.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libyoga.so</RemoteName>
+            <DeployClass>FGX_YogaLibrary</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@40x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@40x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\config-android.json" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\</RemoteDir>
+            <RemoteName>config.json</RemoteName>
+            <DeployClass>FGX_AssetsConfig</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\config-android.json" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\</RemoteDir>
+            <RemoteName>config.json</RemoteName>
+            <DeployClass>FGX_AssetsConfig</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon36</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon36</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@30x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@30x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libEDACDemo.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon48</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-mdpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon48</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Debug\armeabi-v7a\libfb.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libfb.so</RemoteName>
+            <DeployClass>FGX_YogaLibraryFb</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\DB\DemoDB\universal-universal.db3" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\DB\DemoDB\</RemoteDir>
+            <RemoteName>universal-universal.db3</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\DB\DemoDB\universal-universal.db3" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\DB\DemoDB\</RemoteDir>
+            <RemoteName>universal-universal.db3</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@40x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_launcher_round.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon96</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xhdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher_round.png</RemoteName>
+            <DeployClass>Android_LauncherRoundIcon96</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="styles.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidStyle</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="styles.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidStyle</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_notification.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon18</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-ldpi\ic_notification.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-ldpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon18</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@40x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@15x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@15x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-mdpi\splash_image.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-mdpi\splash_image.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@10x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@10x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="DB\SQLite\demo.db3" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\internal\</RemoteDir>
+            <RemoteName>demo.db3</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@30x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@30x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-ldpi\splash_image.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\drawable-ldpi\splash_image.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>splash_image.9.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@20x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@20x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_launcher.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo\res\mipmap-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-xxhdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\res\mipmap-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Libs\Common\Android\Debug\armeabi-v7a\libyoga.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libyoga.so</RemoteName>
+            <DeployClass>FGX_YogaLibrary</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSXARM64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'">
+        <DeployFile Include="Assets\menu\universal-universal@20x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@20x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_app_icon_3x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_app_icon_3x.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_app_icon_3x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_app_icon_3x.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@20x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@20x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@20x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_launch_icon_dark_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPhoneDark@2x.png</RemoteName>
+            <DeployClass>iPhone_LaunchDark2x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_launch_icon_dark_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPhoneDark@2x.png</RemoteName>
+            <DeployClass>iPhone_LaunchDark2x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_spotlight_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_spotlight_2x.png</RemoteName>
+            <DeployClass>iPhone_Spotlight80</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_spotlight_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_spotlight_2x.png</RemoteName>
+            <DeployClass>iPhone_Spotlight80</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_app_icon_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_app_icon_2x.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_app_icon_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_app_icon_2x.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@40x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@40x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_spotlight_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_spotlight_2x.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_spotlight_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_spotlight_2x.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_launch_icon_dark_3x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPhoneDark@3x.png</RemoteName>
+            <DeployClass>iPhone_LaunchDark3x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_launch_icon_dark_3x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPhoneDark@3x.png</RemoteName>
+            <DeployClass>iPhone_LaunchDark3x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_launch_icon_light_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPhone@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch2x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_launch_icon_light_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPhone@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch2x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_launch_icon_light_3x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPhone@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch3x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_launch_icon_light_3x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPhone@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch3x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@40x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@40x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@40x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@30x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@30x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@15x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@15x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_launch_icon_light_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPad@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_launch_icon_light_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPad@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_app_icon_pro_167_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_app_icon_pro_167_2x.png</RemoteName>
+            <DeployClass>iPad_AppIcon167</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_app_icon_pro_167_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_app_icon_pro_167_2x.png</RemoteName>
+            <DeployClass>iPad_AppIcon167</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_notification_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_notification_2x.png</RemoteName>
+            <DeployClass>iPhone_Notification40</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_notification_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_notification_2x.png</RemoteName>
+            <DeployClass>iPhone_Notification40</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_notification_3x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_notification_3x.png</RemoteName>
+            <DeployClass>iPhone_Notification60</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_notification_3x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_notification_3x.png</RemoteName>
+            <DeployClass>iPhone_Notification60</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@15x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@15x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@15x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@30x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@30x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@30x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\config-ios.json" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\</RemoteDir>
+            <RemoteName>config.json</RemoteName>
+            <DeployClass>FGX_AssetsConfig</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\config-ios.json" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\</RemoteDir>
+            <RemoteName>config.json</RemoteName>
+            <DeployClass>FGX_AssetsConfig</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_spotlight_3x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_spotlight_3x.png</RemoteName>
+            <DeployClass>iPhone_Spotlight120</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_spotlight_3x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_spotlight_3x.png</RemoteName>
+            <DeployClass>iPhone_Spotlight120</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@10x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_app_icon_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_app_icon_2x.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_app_icon_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_app_icon_2x.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Mask\universal-universal@10x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\Mask\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_settings_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_settings_2x.png</RemoteName>
+            <DeployClass>iPhone_Setting58</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_settings_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_settings_2x.png</RemoteName>
+            <DeployClass>iPhone_Setting58</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_settings_3x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_settings_3x.png</RemoteName>
+            <DeployClass>iPhone_Setting87</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Phone\iphone_settings_3x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>iphone_settings_3x.png</RemoteName>
+            <DeployClass>iPhone_Setting87</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_launch_icon_dark_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPadDark@2x.png</RemoteName>
+            <DeployClass>iPad_LaunchDark2x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_launch_icon_dark_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset\</RemoteDir>
+            <RemoteName>FM_LaunchScreenImage_iPadDark@2x.png</RemoteName>
+            <DeployClass>iPad_LaunchDark2x</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@10x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\menu\universal-universal@10x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\menu\</RemoteDir>
+            <RemoteName>universal-universal@10x.png</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\AppStore\app_store_x1.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>app_store_x1.png</RemoteName>
+            <DeployClass>iOS_AppStore1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\AppStore\app_store_x1.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>app_store_x1.png</RemoteName>
+            <DeployClass>iOS_AppStore1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_settings_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_settings_2x.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_settings_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_settings_2x.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_notification_2x.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_notification_2x.png</RemoteName>
+            <DeployClass>iPad_Notification40</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(FGX)\Images\iOS\Tablet\ipad_notification_2x.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset\</RemoteDir>
+            <RemoteName>ipad_notification_2x.png</RemoteName>
+            <DeployClass>iPad_Notification40</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\DB\DemoDB\universal-universal.db3" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EDACDemo.app\assets\DB\DemoDB\</RemoteDir>
+            <RemoteName>universal-universal.db3</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\DB\DemoDB\universal-universal.db3" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EDACDemo.app\assets\DB\DemoDB\</RemoteDir>
+            <RemoteName>universal-universal.db3</RemoteName>
+            <DeployClass>FGX_Assets</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

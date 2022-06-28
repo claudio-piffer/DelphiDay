@@ -1,0 +1,9 @@
+object FrameBase: TFrameBase
+  SystemStatusBar.Visibility = Invisible
+  FullScreen = False
+  Transparent = True
+  Size.Width = 411.000000000000000000
+  Size.Height = 277.000000000000000000
+  SavedSizeWidth = 411s
+  SavedSizeHeight = 277s
+end

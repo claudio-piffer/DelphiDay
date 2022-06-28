@@ -1,0 +1,479 @@
+inherited FormSignUp: TFormSignUp
+  DefaultCloseAction = Free
+  BackgroundName = 'Theme\Primary\Light Primary'
+  Size.Width = 446.000000000000000000
+  Size.Height = 683.000000000000000000
+  SavedSizeWidth = 446s
+  SavedSizeHeight = 683s
+  object fgVerticalScrollBox1: TfgVerticalScrollBox
+    AlignmentChildren.Direction = Column
+    Padding.Left = 20.000000000000000000
+    Padding.Top = 48.000000000000000000
+    Padding.Right = 20.000000000000000000
+    Padding.Bottom = 20.000000000000000000
+    Alignment.FlexGrow = 1.000000000000000000
+    PositionMode = Relative
+    RelativePosition.Left = 192.000000000000000000
+    RelativePosition.Top = 352.000000000000000000
+    Size.Width = 446.000000000000000000
+    Size.Height = 683.000000000000000000
+    SavedSizeWidth = 50s
+    SavedSizeHeight = 50s
+    object fgImage1: TfgImage
+      ImageName = 'Illustration\Sign Up\Sign Up'
+      Alignment.AlignSelf = Center
+      PositionMode = Relative
+      Position.X = 123.000000000000000000
+      Position.Y = 48.000000000000000000
+      RelativePosition.Left = 152.000000000000000000
+      RelativePosition.Top = 296.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 200.000000000000000000
+      SavedSizeWidth = 200s
+      SavedSizeHeight = 200s
+    end
+    object lPageTitle: TfgLabel
+      Text = 'Create your account'
+      CharCase = Upper
+      Font.Family = 'Klasik'
+      Font.Size = 24.000000000000000000
+      Font.Default = [Style]
+      LineBreak = WordWrap
+      Trimming = None
+      HorzAlign = Center
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 248.000000000000000000
+      RelativePosition.Left = 136.000000000000000000
+      RelativePosition.Top = 136.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 32.000000000000000000
+      SavedSizeWidth = 82s
+      SavedSizeHeight = 32s
+      ColorDefaultName = 'Theme\Text\Text'
+    end
+    object fgLayout1: TfgLayout
+      Padding.Left = 12.000000000000000000
+      Padding.Right = 12.000000000000000000
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 292.000000000000000000
+      RelativePosition.Left = 200.000000000000000000
+      RelativePosition.Top = 160.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 56.000000000000000000
+      Margins.Top = 12.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 56s
+      object fgRectangle3: TfgRectangle
+        Corners.RadiusX = 12.000000000000000000
+        Corners.RadiusY = 12.000000000000000000
+        Fill.ColorName = 'Theme\Background'
+        Stroke.Kind = None
+        Locked = True
+        RelativePosition.DefinedValues = [Left, Top, Right, Bottom]
+        RelativePosition.Left = 0.000000000000000000
+        RelativePosition.Top = 0.000000000000000000
+        RelativePosition.Right = 0.000000000000000000
+        RelativePosition.Bottom = 0.000000000000000000
+        Size.Width = 406.000000000000000000
+        Size.Height = 56.000000000000000000
+        SavedSizeWidth = 50s
+        SavedSizeHeight = 50s
+        StrokeColorDefaultName = 'Theme/'
+        FillColorDefaultName = 'Theme/'
+      end
+      object fgImage4: TfgImage
+        ImageName = 'UI\Graphics\Username'
+        Alignment.AlignSelf = Center
+        Locked = True
+        PositionMode = Relative
+        Position.X = 12.000000000000000000
+        Position.Y = 12.000000000000000000
+        RelativePosition.Left = 168.000000000000000000
+        RelativePosition.Top = 0.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Margins.Right = 13.000000000000000000
+        SavedSizeWidth = 32s
+        SavedSizeHeight = 32s
+      end
+      object fgEdit3: TfgEdit
+        Text = 'Mira Passaquindici'
+        BorderStyle = None
+        Font.Family = 'Manrope'
+        Font.Size = 16.000000000000000000
+        Font.Style = [fsBold]
+        Font.Default = []
+        ColorName = 'Theme\Primary\Color'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 57.000000000000000000
+        RelativePosition.Left = 224.000000000000000000
+        RelativePosition.Top = 8.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 56.000000000000000000
+        SavedSizeWidth = 97s
+        SavedSizeHeight = 40s
+      end
+    end
+    object lEmail: TfgLayout
+      Padding.Left = 12.000000000000000000
+      Padding.Right = 12.000000000000000000
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 356.000000000000000000
+      RelativePosition.Left = 200.000000000000000000
+      RelativePosition.Top = 160.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 56.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 56s
+      object fgRectangle1: TfgRectangle
+        Corners.RadiusX = 12.000000000000000000
+        Corners.RadiusY = 12.000000000000000000
+        Fill.ColorName = 'Theme\Background'
+        Stroke.Kind = None
+        Locked = True
+        RelativePosition.DefinedValues = [Left, Top, Right, Bottom]
+        RelativePosition.Left = 0.000000000000000000
+        RelativePosition.Top = 0.000000000000000000
+        RelativePosition.Right = 0.000000000000000000
+        RelativePosition.Bottom = 0.000000000000000000
+        Size.Width = 406.000000000000000000
+        Size.Height = 56.000000000000000000
+        SavedSizeWidth = 50s
+        SavedSizeHeight = 50s
+        StrokeColorDefaultName = 'Theme/'
+        FillColorDefaultName = 'Theme/'
+      end
+      object fgImage2: TfgImage
+        ImageName = 'UI\Graphics\Email'
+        TintColorName = 'Colors\Eclipse 50'
+        Alignment.AlignSelf = Center
+        Locked = True
+        PositionMode = Relative
+        Position.X = 12.000000000000000000
+        Position.Y = 12.000000000000000000
+        RelativePosition.Left = 168.000000000000000000
+        RelativePosition.Top = 0.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Margins.Right = 13.000000000000000000
+        SavedSizeWidth = 32s
+        SavedSizeHeight = 32s
+      end
+      object fgEdit1: TfgEdit
+        TextPrompt = 'Email'
+        KeyboardType = EmailAddress
+        BorderStyle = None
+        Font.Family = 'Manrope'
+        Font.Size = 16.000000000000000000
+        Font.Style = [fsBold]
+        Font.Default = []
+        ColorName = 'Theme\Primary\Color'
+        TextPromptColorName = 'Colors\Eclipse 50'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 57.000000000000000000
+        RelativePosition.Left = 224.000000000000000000
+        RelativePosition.Top = 8.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 56.000000000000000000
+        SavedSizeWidth = 97s
+        SavedSizeHeight = 40s
+      end
+    end
+    object lPassword: TfgLayout
+      Padding.Left = 12.000000000000000000
+      Padding.Right = 12.000000000000000000
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 420.000000000000000000
+      RelativePosition.Left = 200.000000000000000000
+      RelativePosition.Top = 160.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 56.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Bottom = 30.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 56s
+      object fgRectangle2: TfgRectangle
+        Corners.RadiusX = 12.000000000000000000
+        Corners.RadiusY = 12.000000000000000000
+        Fill.ColorName = 'Theme\Background'
+        Stroke.Kind = None
+        Locked = True
+        RelativePosition.DefinedValues = [Left, Top, Right, Bottom]
+        RelativePosition.Left = 0.000000000000000000
+        RelativePosition.Top = 0.000000000000000000
+        RelativePosition.Right = 0.000000000000000000
+        RelativePosition.Bottom = 0.000000000000000000
+        Size.Width = 406.000000000000000000
+        Size.Height = 56.000000000000000000
+        SavedSizeWidth = 50s
+        SavedSizeHeight = 50s
+        StrokeColorDefaultName = 'Theme/'
+        FillColorDefaultName = 'Theme/'
+      end
+      object fgImage3: TfgImage
+        ImageName = 'UI\Graphics\Password'
+        TintColorName = 'Colors\Eclipse 50'
+        Alignment.AlignSelf = Center
+        Locked = True
+        PositionMode = Relative
+        Position.X = 12.000000000000000000
+        Position.Y = 12.000000000000000000
+        RelativePosition.Left = 168.000000000000000000
+        RelativePosition.Top = 0.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Margins.Right = 13.000000000000000000
+        SavedSizeWidth = 32s
+        SavedSizeHeight = 32s
+      end
+      object fgEdit2: TfgEdit
+        TextPrompt = 'Password'
+        IsPassword = True
+        BorderStyle = None
+        Font.Family = 'Manrope'
+        Font.Size = 16.000000000000000000
+        Font.Style = [fsBold]
+        Font.Default = []
+        ColorName = 'Theme\Primary\Color'
+        TextPromptColorName = 'Colors\Eclipse 50'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 57.000000000000000000
+        RelativePosition.Left = 224.000000000000000000
+        RelativePosition.Top = 8.000000000000000000
+        Size.Width = 265.000000000000000000
+        Size.Height = 56.000000000000000000
+        Margins.Right = 12.000000000000000000
+        SavedSizeWidth = 97s
+        SavedSizeHeight = 40s
+      end
+      object fgButton4: TfgButton
+        Kind = Text
+        Appearance.Text.Font.Style = [fsUnderline]
+        Appearance.Text.Font.Default = [Family, Size]
+        CharCase = Normal
+        Text = 'Show'
+        TintColorName = 'Colors\Eclipse'
+        PositionMode = Relative
+        Position.X = 334.000000000000000000
+        Position.Y = 12.000000000000000000
+        RelativePosition.Left = 136.000000000000000000
+        RelativePosition.Top = 8.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 32.000000000000000000
+        Margins.Top = 12.000000000000000000
+        Margins.Bottom = 12.000000000000000000
+        SavedSizeWidth = 60s
+        SavedSizeHeight = 36s
+      end
+    end
+    object fgCheckBox1: TfgCheckBox
+      IsChecked = True
+      TintColorName = 'Theme\Primary\Color'
+      Text = 'Keep me signed in'
+      Font.Family = 'Manrope Medium'
+      Font.Size = 16.000000000000000000
+      Font.Default = [Style]
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 506.000000000000000000
+      RelativePosition.Left = 24.000000000000000000
+      RelativePosition.Top = 312.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 25.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      SavedSizeWidth = 120s
+      SavedSizeHeight = 25s
+      ColorDefaultName = 'Theme\Text\Text'
+    end
+    object fgCheckBox2: TfgCheckBox
+      IsChecked = True
+      TintColorName = 'Theme\Primary\Color'
+      Text = 'Email me about special pricing and more'
+      Font.Family = 'Manrope Medium'
+      Font.Size = 16.000000000000000000
+      Font.Default = [Style]
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 541.000000000000000000
+      RelativePosition.Left = 16.000000000000000000
+      RelativePosition.Top = 352.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 25.000000000000000000
+      SavedSizeWidth = 120s
+      SavedSizeHeight = 25s
+      ColorDefaultName = 'Theme\Text\Text'
+    end
+    object btnCreateAccount: TfgButton
+      Kind = Contained
+      Appearance.Text.Font.Family = 'Manrope'
+      Appearance.Text.Font.Size = 16.000000000000000000
+      Appearance.Text.Font.Style = [fsBold]
+      Appearance.Text.Font.Default = []
+      Appearance.Text.FontColorName = 'Theme\Text\Text'
+      Appearance.Border.CornerRadius = 8.000000000000000000
+      CharCase = Normal
+      Text = 'Create Account'
+      TintColorName = 'Theme\Primary\Color'
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 586.000000000000000000
+      RelativePosition.Left = 24.000000000000000000
+      RelativePosition.Top = 760.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 60.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      OnTap = btnCreateAccountTap
+      SavedSizeWidth = 353s
+      SavedSizeHeight = 60s
+    end
+    object fgLayout2: TfgLayout
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 658.000000000000000000
+      RelativePosition.Left = 72.000000000000000000
+      RelativePosition.Top = 416.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 22.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      SavedSizeWidth = 225s
+      SavedSizeHeight = 22s
+      object fgLine1: TfgLine
+        Fill.Kind = None
+        Stroke.ColorName = 'Theme\Text\Dividers'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        RelativePosition.Left = 184.000000000000000000
+        RelativePosition.Top = 96.000000000000000000
+        Size.Width = 142.000000000000000000
+        Size.Height = 22.000000000000000000
+        SavedSizeWidth = 50s
+        SavedSizeHeight = 1s
+        StrokeColorDefaultName = 'Theme/'
+        FillColorDefaultName = 'Theme/'
+      end
+      object fgLabel1: TfgLabel
+        Text = 'Or sign in with'
+        ColorName = 'Colors\Eclipse 50'
+        Font.Family = 'Manrope Medium'
+        Font.Default = [Size, Style]
+        HorzAlign = Center
+        PositionMode = Relative
+        Position.X = 150.000000000000000000
+        RelativePosition.Left = 72.000000000000000000
+        RelativePosition.Top = 16.000000000000000000
+        Size.Width = 106.000000000000000000
+        Size.Height = 22.000000000000000000
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        SavedSizeWidth = 106s
+        SavedSizeHeight = 23s
+        ColorDefaultName = 'Theme\Text\Text'
+      end
+      object fgLine2: TfgLine
+        Fill.Kind = None
+        Stroke.ColorName = 'Theme\Text\Dividers'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 264.000000000000000000
+        RelativePosition.Left = 184.000000000000000000
+        RelativePosition.Top = 96.000000000000000000
+        Size.Width = 142.000000000000000000
+        Size.Height = 22.000000000000000000
+        SavedSizeWidth = 50s
+        SavedSizeHeight = 1s
+        StrokeColorDefaultName = 'Theme/'
+        FillColorDefaultName = 'Theme/'
+      end
+    end
+    object fgLayout3: TfgLayout
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 692.000000000000000000
+      RelativePosition.Left = 120.000000000000000000
+      RelativePosition.Top = 424.000000000000000000
+      Size.Width = 406.000000000000000000
+      Size.Height = 50.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 50s
+      object btnLoginViaGoogle: TfgButton
+        Kind = Contained
+        Appearance.Text.Font.Family = 'Manrope'
+        Appearance.Text.Font.Size = 16.000000000000000000
+        Appearance.Text.Font.Style = [fsBold]
+        Appearance.Text.Font.Default = []
+        Appearance.Text.FontColorName = 'Theme\Text\Text'
+        Appearance.Border.CornerRadius = 12.000000000000000000
+        Appearance.Background.FillColorName = 'Theme\Background'
+        CharCase = Normal
+        Text = 'Google'
+        IconName = 'Buttons\Icons\Google'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        RelativePosition.Left = 120.000000000000000000
+        RelativePosition.Top = 304.000000000000000000
+        Size.Width = 197.000000000000000000
+        Size.Height = 50.000000000000000000
+        Margins.Right = 6.000000000000000000
+        SavedSizeWidth = 120s
+        SavedSizeHeight = 50s
+      end
+      object btnLoginViaFacebook: TfgButton
+        Kind = Contained
+        Appearance.Text.Font.Family = 'Manrope'
+        Appearance.Text.Font.Size = 16.000000000000000000
+        Appearance.Text.Font.Style = [fsBold]
+        Appearance.Text.Font.Default = []
+        Appearance.Text.FontColorName = 'Theme\Text\Text'
+        Appearance.Border.CornerRadius = 12.000000000000000000
+        Appearance.Background.FillColorName = 'Theme\Background'
+        CharCase = Normal
+        Text = 'Facebook'
+        IconName = 'Buttons\Icons\Facebook'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 209.000000000000000000
+        RelativePosition.Left = 72.000000000000000000
+        RelativePosition.Top = 288.000000000000000000
+        Size.Width = 197.000000000000000000
+        Size.Height = 50.000000000000000000
+        Margins.Left = 6.000000000000000000
+        SavedSizeWidth = 120s
+        SavedSizeHeight = 50s
+      end
+    end
+    object lSignIn: TfgLabel
+      Text = 'Already have an account? Sign In'
+      Font.Family = 'Manrope Medium'
+      Font.Style = [fsUnderline]
+      Font.Default = [Size]
+      Trimming = None
+      HorzAlign = Center
+      Alignment.AlignSelf = Center
+      PositionMode = Relative
+      Position.X = 113.000000000000000000
+      Position.Y = 762.000000000000000000
+      RelativePosition.Left = 184.000000000000000000
+      RelativePosition.Top = 136.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 23.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      HitTest = True
+      OnTap = lSignInTap
+      SavedSizeWidth = 220s
+      SavedSizeHeight = 23s
+      ColorDefaultName = 'Theme\Text\Text'
+    end
+  end
+end

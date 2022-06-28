@@ -1,0 +1,6 @@
+inherited ScreenBase: TScreenBase
+  Size.Width = 321.000000000000000000
+  Size.Height = 320.000000000000000000
+  SavedSizeWidth = 321s
+  SavedSizeHeight = 320s
+end

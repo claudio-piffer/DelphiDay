@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDeveloper Version="6.12.1354.0">
+  <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ConnectionStringInAppConfig="False" DetectTPTInheritance="True">
+    <Connection ConnectionString="" Provider="" />
+    <Generation>
+      <GeneratedFiles>
+        <File Name="Demo.AttributeContext.pas" />
+        <File Name="Demo.AttributeLinq.pas" />
+        <File Name="Demo.AttributeMapping.xml" />
+        <File Name="Demo.AttributeClasses.pas" />
+        <File Name="Demo.Context.pas" />
+        <File Name="Demo.Linq.pas" />
+        <File Name="Demo.MetaData.pas" />
+        <File Name="dclDemo.dpk" />
+        <File Name="Demo.Mapping.xml" />
+        <File Name="Demo.Classes.pas" />
+        <File Name="Demo.ObjectContext.pas" />
+        <File Name="Demo.ObjectLinq.pas" />
+        <File Name="Demo.ObjectMapping.xml" />
+        <File Name="Demo.Objects.pas" />
+        <File Name="Demo.XMLMapping.xml" />
+        <File Name="Demo.XMLClasses.pas" />
+      </GeneratedFiles>
+    </Generation>
+    <DatabaseFirstNamingRules>
+      <EntitySet PluralizationName="Pluralize" />
+      <Class UseSchemaAsPrefix="False" PluralizeCollectionNavigationPropertyName="True" AddConstraintColumnsToNavigationPropertyName="False" RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Capitalized" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Singularize" />
+      <Property RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Capitalized" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+    </DatabaseFirstNamingRules>
+    <ModelFirst StorageSynchronizationEnabled="False">
+      <ModelFirstNamingRules>
+        <Table RemoveUnderscores="False" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Pluralize" />
+        <Column RemoveUnderscores="False" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      </ModelFirstNamingRules>
+    </ModelFirst>
+    <Diagrams>
+      <Diagram Name="DemoDiagram" DefaultDiagram="True" />
+    </Diagrams>
+    <Templates>
+      <Template Name="Attribute-mapped Entity Classes" Description="Use this template to generate attribute-mapped classes which are TEntity descendants and fully managed by a data context." Enabled="True" PredefinedTemplateName="AttributeMappedEntity">
+        <ed:Property Name="ModelNameAsFilePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="Output" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="OutputNameForMapping" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>AttributeMapping</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForClasses" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>AttributeClasses</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForLINQ" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>AttributeLinq</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForContext" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>AttributeContext</string>
+        </ed:Property>
+        <ed:Property Name="MetaModelNameSuffix" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Entity</string>
+        </ed:Property>
+      </Template>
+      <Template Name="Code-mapped Entity Classes" Description="Use this template to generate code-mapped classes which are TEntity descendants and fully managed by a data context. Mapping for these classes is defined using specially generated metadata classes." Enabled="True" PredefinedTemplateName="CodeMappedEntity">
+        <ed:Property Name="ModelNameAsFilePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="Output" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="OutputNameForMapping" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Mapping</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForClasses" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Classes</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForMetaData" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>MetaData</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForLINQ" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Linq</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForContext" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Context</string>
+        </ed:Property>
+        <ed:Property Name="MetaModelNameSuffix" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+      </Template>
+      <Template Name="Attribute-mapped Objects" Description="Use this template to generate classes which are TObject descendants. Mapping for these classes is defined directly in the class declaration using special attributes." Enabled="True" PredefinedTemplateName="AttributeMappedObject">
+        <ed:Property Name="ModelNameAsFilePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="Output" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="OutputNameForMapping" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>ObjectMapping</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForClasses" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Objects</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForLINQ" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>ObjectLinq</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForContext" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>ObjectContext</string>
+        </ed:Property>
+        <ed:Property Name="MetaModelNameSuffix" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Object</string>
+        </ed:Property>
+      </Template>
+      <Template Name="XML-mapped Entity Classes" Description="Use this template to generate classes which are TEntity descendants and fully managed by a data context. Mapping for these classes can be defined using an external XML-file." Enabled="True" PredefinedTemplateName="XmlMappedEntity">
+        <ed:Property Name="ModelNameAsFilePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="Output" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="OutputNameForMapping" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>XMLMapping</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForClasses" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>XMLClasses</string>
+        </ed:Property>
+      </Template>
+    </Templates>
+    <AttributeAssemblies />
+  </ModelSettings>
+</EntityDeveloper>

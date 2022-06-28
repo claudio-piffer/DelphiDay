@@ -1,0 +1,126 @@
+inherited ScreenHomepage: TScreenHomepage
+  Size.Width = 455.000000000000000000
+  Size.Height = 307.000000000000000000
+  SavedSizeWidth = 455s
+  SavedSizeHeight = 307s
+  object sbContent: TfgVerticalScrollBox
+    AlignmentChildren.Direction = Column
+    Alignment.FlexGrow = 1.000000000000000000
+    PositionMode = Relative
+    RelativePosition.Left = 152.000000000000000000
+    RelativePosition.Top = 296.000000000000000000
+    Size.Width = 455.000000000000000000
+    Size.Height = 307.000000000000000000
+    SavedSizeWidth = 50s
+    SavedSizeHeight = 50s
+    object cpQuoteBanner: TfgCardPanel
+      CornerRadius = 12.000000000000000000
+      AlignmentChildren.Direction = Column
+      Padding.Left = 20.000000000000000000
+      Padding.Top = 26.000000000000000000
+      Padding.Right = 20.000000000000000000
+      Padding.Bottom = 26.000000000000000000
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      RelativePosition.Left = 104.000000000000000000
+      RelativePosition.Top = 248.000000000000000000
+      Size.Width = 415.000000000000000000
+      Size.Height = 146.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 146s
+      object imgIllustration: TfgImage
+        ImageName = 'Illustration\Homepage\Banner illustration'
+        ImageMode = AspectFill
+        Alignment.FlexGrow = 1.000000000000000000
+        Position.X = 256.000000000000000000
+        Position.Y = 1.000000000000000000
+        RelativePosition.DefinedValues = [Top, Right, Bottom]
+        RelativePosition.Top = 1.000000000000000000
+        RelativePosition.Right = 1.000000000000000000
+        RelativePosition.Bottom = 1.000000000000000000
+        Size.Width = 158.000000000000000000
+        Size.Height = 144.000000000000000000
+        SavedSizeWidth = 158s
+        SavedSizeHeight = 50s
+      end
+      object lQuote: TfgLabel
+        Text = 'We first make our habits, '#10'and then our habits '#10'makes us.'
+        CharCase = Upper
+        Font.Family = 'Klasik'
+        Font.Size = 18.000000000000000000
+        Font.Default = [Style]
+        LinesCount = 3
+        LineBreak = CharacterWrap
+        Trimming = None
+        PositionMode = Relative
+        Position.X = 20.000000000000000000
+        Position.Y = 26.000000000000000000
+        RelativePosition.Left = 136.000000000000000000
+        RelativePosition.Top = 136.000000000000000000
+        Size.Width = 275.000000000000000000
+        Size.Height = 62.000000000000000000
+        Margins.Right = 100.000000000000000000
+        SavedSizeWidth = 145s
+        SavedSizeHeight = 62s
+        ColorDefaultName = 'Theme\Text\Text'
+      end
+      object lQuoteAuthor: TfgLabel
+        Text = '- anonymous'
+        ColorName = 'Colors\Eclipse 50'
+        CharCase = Upper
+        Font.Family = 'Manrope'
+        Font.Size = 12.000000000000000000
+        Font.Style = [fsBold]
+        Font.Default = []
+        LineBreak = WordWrap
+        Trimming = None
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 20.000000000000000000
+        Position.Y = 88.000000000000000000
+        RelativePosition.Left = 136.000000000000000000
+        RelativePosition.Top = 16.000000000000000000
+        Size.Width = 275.000000000000000000
+        Size.Height = 32.000000000000000000
+        Margins.Right = 100.000000000000000000
+        Opacity = 0.500000000000000000
+        SavedSizeWidth = 82s
+        SavedSizeHeight = 23s
+        ColorDefaultName = 'Theme\Text\Text'
+      end
+    end
+    object lDaysContainer: TfgLayout
+      Padding.Left = 32.000000000000000000
+      PositionMode = Relative
+      Position.Y = 166.000000000000000000
+      RelativePosition.Left = 48.000000000000000000
+      RelativePosition.Top = 272.000000000000000000
+      Size.Width = 467.000000000000000000
+      Size.Height = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = -12.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 50s
+      object lHabitTitle: TfgLabel
+        Text = 'Habits'
+        CharCase = Upper
+        Font.Family = 'Manrope'
+        Font.Style = [fsBold]
+        Font.Default = [Size]
+        PositionMode = Relative
+        Position.X = 32.000000000000000000
+        RelativePosition.Left = 160.000000000000000000
+        RelativePosition.Top = 16.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 50.000000000000000000
+        Margins.Right = 26.000000000000000000
+        SavedSizeWidth = 100s
+        SavedSizeHeight = 23s
+        ColorDefaultName = 'Theme\Text\Text'
+      end
+    end
+  end
+end

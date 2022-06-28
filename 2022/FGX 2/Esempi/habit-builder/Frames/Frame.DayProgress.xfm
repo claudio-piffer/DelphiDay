@@ -1,0 +1,43 @@
+inherited FrameDayProgress: TFrameDayProgress
+  AlignmentChildren.JustifyContent = Center
+  AlignmentChildren.AlignItems = Center
+  Size.Width = 371.000000000000000000
+  Size.Height = 206.000000000000000000
+  HitTest = False
+  SavedSizeWidth = 371s
+  SavedSizeHeight = 206s
+  object cpBackground: TfgCardPanel
+    CornerRadius = 12.000000000000000000
+    BackgroundColorName = 'Colors\Morning'
+    Elevation = 0.000000000000000000
+    Padding.Left = 2.000000000000000000
+    Padding.Top = 2.000000000000000000
+    Padding.Right = 2.000000000000000000
+    Padding.Bottom = 2.000000000000000000
+    PositionMode = Relative
+    Position.X = 154.500000000000000000
+    Position.Y = 76.000000000000000000
+    RelativePosition.Left = 72.000000000000000000
+    RelativePosition.Top = 48.000000000000000000
+    Size.Width = 54.000000000000000000
+    Size.Height = 54.000000000000000000
+    Margins.Right = 8.000000000000000000
+    SavedSizeWidth = 54s
+    SavedSizeHeight = 54s
+    object fgSvgPath1: TfgSvgPath
+      Stroke.Kind = None
+      Alignment.FlexGrow = 1.000000000000000000
+      PositionMode = Relative
+      Position.X = 2.000000000000000000
+      Position.Y = 2.000000000000000000
+      RelativePosition.Left = 288.000000000000000000
+      RelativePosition.Top = 248.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 50s
+      StrokeColorDefaultName = 'Theme/'
+      FillColorDefaultName = 'Theme/'
+    end
+  end
+end

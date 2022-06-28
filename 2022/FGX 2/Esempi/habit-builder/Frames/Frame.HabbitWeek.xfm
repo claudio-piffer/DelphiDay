@@ -1,0 +1,59 @@
+inherited FrameHabbitWeek: TFrameHabbitWeek
+  Size.Width = 658.000000000000000000
+  Size.Height = 70.000000000000000000
+  SavedSizeWidth = 658s
+  SavedSizeHeight = 70s
+  object fgCardPanel1: TfgCardPanel
+    CornerRadius = 12.000000000000000000
+    Elevation = 0.000000000000000000
+    Alignment.FlexGrow = 1.000000000000000000
+    Padding.Left = 18.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    PositionMode = Relative
+    RelativePosition.Left = 8.000000000000000000
+    RelativePosition.Top = 16.000000000000000000
+    Size.Width = 670.000000000000000000
+    Size.Height = 70.000000000000000000
+    Margins.Right = -12.000000000000000000
+    SavedSizeWidth = 50s
+    SavedSizeHeight = 50s
+    object lTitle: TfgLabel
+      Text = 'Read A Book'
+      Font.Family = 'Manrope'
+      Font.Style = [fsBold]
+      Font.Default = [Size]
+      PositionMode = Relative
+      Position.X = 18.000000000000000000
+      Position.Y = 10.000000000000000000
+      RelativePosition.Left = 272.000000000000000000
+      RelativePosition.Top = 24.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Margins.Right = 8.000000000000000000
+      SavedSizeWidth = 100s
+      SavedSizeHeight = 23s
+      ColorDefaultName = 'Theme\Text\Text'
+    end
+    object lSeparator: TfgLine
+      Fill.Kind = None
+      Stroke.ColorName = 'Theme\Text\Dividers'
+      LineType = Left
+      PositionMode = Relative
+      Position.X = 134.000000000000000000
+      Position.Y = 2.000000000000000000
+      RelativePosition.Left = 120.000000000000000000
+      RelativePosition.Top = 32.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 66.000000000000000000
+      Margins.Left = 8.000000000000000000
+      Margins.Top = -8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = -8.000000000000000000
+      SavedSizeWidth = 1s
+      SavedSizeHeight = 10s
+      StrokeColorDefaultName = 'Theme/'
+      FillColorDefaultName = 'Theme/'
+    end
+  end
+end

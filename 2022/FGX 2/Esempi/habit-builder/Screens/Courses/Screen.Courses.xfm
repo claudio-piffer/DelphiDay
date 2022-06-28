@@ -1,0 +1,240 @@
+inherited ScreenCourses: TScreenCourses
+  Size.Width = 398.000000000000000000
+  Size.Height = 549.000000000000000000
+  SavedSizeWidth = 398s
+  SavedSizeHeight = 549s
+  object cvCourses: TfgCollectionView
+    Padding.Bottom = 138.000000000000000000
+    OnGetItemCount = cvCoursesGetItemCount
+    OnGetItemStyle = cvCoursesGetItemStyle
+    OnBindItem = cvCoursesBindItem
+    Alignment.FlexGrow = 1.000000000000000000
+    PositionMode = Relative
+    RelativePosition.Left = 72.000000000000000000
+    RelativePosition.Top = 72.000000000000000000
+    Size.Width = 398.000000000000000000
+    Size.Height = 549.000000000000000000
+    SavedSizeWidth = 200s
+    SavedSizeHeight = 400s
+    object cvCourses_Styles: TfgCollectionViewStyles
+      SavedSizeWidth = 398s
+      SavedSizeHeight = 549s
+      object StyleBanner: TfgCollectionViewStyle
+        StyleName = 'Style Banner'
+        AlignmentChildren.Direction = Column
+        Size.Width = 398.000000000000000000
+        Size.Height = 173.000000000000000000
+        HitTest = False
+        SavedSizeWidth = 398s
+        SavedSizeHeight = 173s
+        object fgCardPanel1: TfgCardPanel
+          CornerRadius = 21.000000000000000000
+          Alignment.FlexGrow = 1.000000000000000000
+          AlignmentChildren.Direction = Column
+          Padding.Left = 25.000000000000000000
+          Padding.Top = 22.000000000000000000
+          Padding.Right = 25.000000000000000000
+          Padding.Bottom = 22.000000000000000000
+          PositionMode = Relative
+          Position.X = 16.000000000000000000
+          RelativePosition.Left = 120.000000000000000000
+          RelativePosition.Top = 152.000000000000000000
+          Size.Width = 366.000000000000000000
+          Size.Height = 157.000000000000000000
+          Margins.Left = 16.000000000000000000
+          Margins.Right = 16.000000000000000000
+          Margins.Bottom = 16.000000000000000000
+          SavedSizeWidth = 50s
+          SavedSizeHeight = 146s
+          object fgImage2: TfgImage
+            ImageName = 'Illustration\Splash'
+            ImageMode = AspectFill
+            RelativePosition.DefinedValues = [Left, Top, Right, Bottom]
+            RelativePosition.Left = 0.000000000000000000
+            RelativePosition.Top = 0.000000000000000000
+            RelativePosition.Right = 0.000000000000000000
+            RelativePosition.Bottom = 0.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 157.000000000000000000
+            SavedSizeWidth = 50s
+            SavedSizeHeight = 50s
+          end
+          object lQuote: TfgLabel
+            Text = 'Habit courses'
+            CharCase = Upper
+            Font.Family = 'Klasik'
+            Font.Size = 36.000000000000000000
+            Font.Default = [Style]
+            LinesCount = 2
+            LineBreak = WordWrap
+            Trimming = None
+            Alignment.FlexGrow = 1.000000000000000000
+            PositionMode = Relative
+            Position.X = 25.000000000000000000
+            Position.Y = 22.000000000000000000
+            RelativePosition.Left = 136.000000000000000000
+            RelativePosition.Top = 136.000000000000000000
+            Size.Width = 216.000000000000000000
+            Size.Height = 75.000000000000000000
+            Margins.Right = 100.000000000000000000
+            SavedSizeWidth = 145s
+            SavedSizeHeight = 59s
+            ColorDefaultName = 'Theme\Text\Text'
+          end
+          object fgLabel4: TfgLabel
+            Text = 'Find what fascinates you as you explore these habit courses.'
+            CharCase = Upper
+            Font.Family = 'Manrope Medium'
+            Font.Size = 12.000000000000000000
+            Font.Default = [Style]
+            LinesCount = 2
+            LineBreak = WordWrap
+            Trimming = None
+            PositionMode = Relative
+            Position.X = 25.000000000000000000
+            Position.Y = 105.000000000000000000
+            RelativePosition.Left = 136.000000000000000000
+            RelativePosition.Top = 16.000000000000000000
+            Size.Width = 216.000000000000000000
+            Size.Height = 30.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 100.000000000000000000
+            Opacity = 0.500000000000000000
+            SavedSizeWidth = 82s
+            SavedSizeHeight = 30s
+            ColorDefaultName = 'Theme\Text\Text'
+          end
+        end
+      end
+      object StyleCourse: TfgCollectionViewStyle
+        StyleName = 'Style Course'
+        Padding.Left = 16.000000000000000000
+        Padding.Top = 8.000000000000000000
+        Padding.Right = 16.000000000000000000
+        Padding.Bottom = 8.000000000000000000
+        Size.Width = 398.000000000000000000
+        Size.Height = 290.000000000000000000
+        HitTest = False
+        SavedSizeWidth = 398s
+        SavedSizeHeight = 290s
+        object fgCardPanel2: TfgCardPanel
+          CornerRadius = 12.000000000000000000
+          Alignment.FlexGrow = 1.000000000000000000
+          AlignmentChildren.Direction = Column
+          PositionMode = Relative
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          RelativePosition.Left = 152.000000000000000000
+          RelativePosition.Top = 56.000000000000000000
+          Size.Width = 366.000000000000000000
+          Size.Height = 274.000000000000000000
+          SavedSizeWidth = 50s
+          SavedSizeHeight = 50s
+          object fgImage1: TfgImage
+            ImageName = 'Photos\Courses\01 Course Preview'
+            ImageMode = AspectFill
+            Alignment.FlexGrow = 1.000000000000000000
+            LookupName = 'preview'
+            PositionMode = Relative
+            RelativePosition.Left = 8.000000000000000000
+            RelativePosition.Top = 8.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 168.000000000000000000
+            SavedSizeWidth = 50s
+            SavedSizeHeight = 50s
+          end
+          object fgLabel1: TfgLabel
+            Text = '30 Day Journal Challenge - Establish a Habit of Daily Journaling'
+            Font.Family = 'Manrope'
+            Font.Size = 18.000000000000000000
+            Font.Style = [fsBold]
+            Font.Default = []
+            LineBreak = WordWrap
+            LookupName = 'title'
+            PositionMode = Relative
+            Position.X = 12.000000000000000000
+            Position.Y = 176.000000000000000000
+            RelativePosition.Left = -16.000000000000000000
+            RelativePosition.Top = 16.000000000000000000
+            Size.Width = 346.000000000000000000
+            Size.Height = 48.000000000000000000
+            Margins.Left = 12.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            SavedSizeWidth = 82s
+            SavedSizeHeight = 48s
+            ColorDefaultName = 'Theme\Text\Text'
+          end
+          object fgLayout1: TfgLayout
+            AlignmentChildren.Direction = Column
+            Padding.Left = 12.000000000000000000
+            Padding.Right = 8.000000000000000000
+            PositionMode = Relative
+            Position.Y = 232.000000000000000000
+            RelativePosition.Left = 16.000000000000000000
+            RelativePosition.Top = -16.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 42.000000000000000000
+            SavedSizeWidth = 50s
+            SavedSizeHeight = 42s
+            object fgLabel2: TfgLabel
+              Text = '2h 41m'
+              Font.Family = 'Manrope Medium'
+              Font.Size = 12.000000000000000000
+              Font.Default = [Style]
+              LookupName = 'duration'
+              PositionMode = Relative
+              Position.X = 12.000000000000000000
+              RelativePosition.Left = -8.000000000000000000
+              RelativePosition.Top = 24.000000000000000000
+              Size.Width = 346.000000000000000000
+              Size.Height = 14.000000000000000000
+              SavedSizeWidth = 82s
+              SavedSizeHeight = 14s
+              ColorDefaultName = 'Theme\Text\Text'
+            end
+            object fgLabel3: TfgLabel
+              Text = '37 Lessons'
+              ColorName = 'Colors\Eclipse 50'
+              Font.Family = 'Manrope Medium'
+              Font.Size = 12.000000000000000000
+              Font.Default = [Style]
+              LookupName = 'count'
+              PositionMode = Relative
+              Position.X = 12.000000000000000000
+              Position.Y = 14.000000000000000000
+              RelativePosition.Left = 16.000000000000000000
+              RelativePosition.Top = 16.000000000000000000
+              Size.Width = 346.000000000000000000
+              Size.Height = 14.000000000000000000
+              SavedSizeWidth = 82s
+              SavedSizeHeight = 14s
+              ColorDefaultName = 'Theme\Text\Text'
+            end
+          end
+          object fgButton1: TfgButton
+            Kind = Contained
+            Appearance.Icon.Location = Center
+            Appearance.Icon.RenderMode = Original
+            Appearance.Icon.Padding = 0.000000000000000000
+            Appearance.Border.CornerRadius = 16.000000000000000000
+            Appearance.Background.FillColorName = 'Buttons\Background'
+            Text = 'fgButton1'
+            IconName = 'Buttons\Icons\Bookmark'
+            LookupName = 'bookmark'
+            Position.X = 316.000000000000000000
+            Position.Y = 230.000000000000000000
+            RelativePosition.DefinedValues = [Right, Bottom]
+            RelativePosition.Right = 18.000000000000000000
+            RelativePosition.Bottom = 12.000000000000000000
+            Size.Width = 32.000000000000000000
+            Size.Height = 32.000000000000000000
+            SavedSizeWidth = 32s
+            SavedSizeHeight = 32s
+          end
+        end
+      end
+    end
+  end
+end

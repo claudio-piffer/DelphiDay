@@ -1,0 +1,232 @@
+inherited FormReminderEditor: TFormReminderEditor
+  BackgroundName = 'Colors\Eclipse Light'
+  SavedSizeWidth = 360s
+  SavedSizeHeight = 640s
+  object fgCardPanel1: TfgCardPanel
+    CornerRadius = 12.000000000000000000
+    AlignmentChildren.Direction = Column
+    Padding.Bottom = 30.000000000000000000
+    Position.Y = 264.000000000000000000
+    RelativePosition.DefinedValues = [Left, Right, Bottom]
+    RelativePosition.Left = 0.000000000000000000
+    RelativePosition.Right = 0.000000000000000000
+    RelativePosition.Bottom = -12.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 388.000000000000000000
+    SavedSizeWidth = 50s
+    SavedSizeHeight = 388s
+    object cvReminders: TfgCollectionView
+      ColumnsCount = 3
+      Padding.Left = 20.000000000000000000
+      Padding.Top = 20.000000000000000000
+      Padding.Right = 20.000000000000000000
+      OnGetItemCount = cvRemindersGetItemCount
+      OnGetItemId = cvRemindersGetItemId
+      OnGetItemStyle = cvRemindersGetItemStyle
+      OnBindItem = cvRemindersBindItem
+      Alignment.FlexGrow = 1.000000000000000000
+      PositionMode = Relative
+      Position.Y = 16.000000000000000000
+      RelativePosition.Left = 152.000000000000000000
+      RelativePosition.Top = 8.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 266.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      SavedSizeWidth = 200s
+      SavedSizeHeight = 400s
+      object cvReminders_Styles: TfgCollectionViewStyles
+        SavedSizeWidth = 411s
+        SavedSizeHeight = 201s
+        object cvReminders_StyleAlarmOn: TfgCollectionViewStyle
+          StyleName = 'Alarm On'
+          AlignmentChildren.Direction = Column
+          AlignmentChildren.JustifyContent = SpaceAround
+          Padding.Left = 8.000000000000000000
+          Padding.Top = 8.000000000000000000
+          Padding.Right = 8.000000000000000000
+          Padding.Bottom = 8.000000000000000000
+          Size.Width = 106.666664123535200000
+          Size.Height = 98.000000000000000000
+          HitTest = False
+          SavedSizeWidth = 106.666664123535s
+          SavedSizeHeight = 98s
+          object fgRectangle1: TfgRectangle
+            Corners.RadiusX = 12.000000000000000000
+            Corners.RadiusY = 12.000000000000000000
+            Fill.ColorName = 'Colors\Fog Light'
+            Stroke.Kind = None
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            RelativePosition.DefinedValues = [Left, Top, Right, Bottom]
+            RelativePosition.Left = 8.000000000000000000
+            RelativePosition.Top = 8.000000000000000000
+            RelativePosition.Right = 8.666656494140625000
+            RelativePosition.Bottom = 8.000000000000000000
+            Size.Width = 90.000007629394530000
+            Size.Height = 82.000000000000000000
+            SavedSizeWidth = 50s
+            SavedSizeHeight = 50s
+            StrokeColorDefaultName = 'Theme/'
+            FillColorDefaultName = 'Theme/'
+          end
+          object fgLabel6: TfgLabel
+            Text = '06:00'
+            ColorName = 'Theme\Primary\Color'
+            Font.Family = 'Manrope'
+            Font.Size = 20.000000000000000000
+            Font.Style = [fsBold]
+            Font.Default = []
+            HorzAlign = Center
+            LookupName = 'time'
+            PositionMode = Relative
+            Position.X = 8.000000000000000000
+            Position.Y = 16.250000000000000000
+            RelativePosition.Left = 32.000000000000000000
+            RelativePosition.Top = 32.000000000000000000
+            Size.Width = 90.666664123535160000
+            Size.Height = 23.000000000000000000
+            SavedSizeWidth = 82s
+            SavedSizeHeight = 23s
+            ColorDefaultName = 'Theme\Text\Text'
+          end
+          object fgSwitch2: TfgSwitch
+            IsChecked = True
+            TintColorName = 'Theme\Primary\Color'
+            OnChanged = fgSwitch2Changed
+            Alignment.AlignSelf = Center
+            LookupName = 'enabled'
+            PositionMode = Relative
+            Position.X = 31.333332061767580000
+            Position.Y = 55.750000000000000000
+            RelativePosition.Left = 24.000000000000000000
+            RelativePosition.Top = 8.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 26.000000000000000000
+            SavedSizeWidth = 44s
+            SavedSizeHeight = 26s
+            ColorDefaultName = 'Theme\Text\Text'
+          end
+        end
+        object cvReminders_StyleAlarmOff: TfgCollectionViewStyle
+          StyleName = 'Alarm Off'
+          AlignmentChildren.Direction = Column
+          AlignmentChildren.JustifyContent = SpaceAround
+          Padding.Left = 8.000000000000000000
+          Padding.Top = 8.000000000000000000
+          Padding.Right = 8.000000000000000000
+          Padding.Bottom = 8.000000000000000000
+          Size.Width = 106.666664123535200000
+          Size.Height = 98.000000000000000000
+          HitTest = False
+          SavedSizeWidth = 106.666664123535s
+          SavedSizeHeight = 98s
+          object fgRectangle2: TfgRectangle
+            Corners.RadiusX = 12.000000000000000000
+            Corners.RadiusY = 12.000000000000000000
+            Fill.ColorName = 'Colors\Eclipse Light'
+            Stroke.Kind = None
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            RelativePosition.DefinedValues = [Left, Top, Right, Bottom]
+            RelativePosition.Left = 8.000000000000000000
+            RelativePosition.Top = 8.000000000000000000
+            RelativePosition.Right = 8.666656494140625000
+            RelativePosition.Bottom = 8.000000000000000000
+            Size.Width = 90.000007629394530000
+            Size.Height = 82.000000000000000000
+            SavedSizeWidth = 50s
+            SavedSizeHeight = 50s
+            StrokeColorDefaultName = 'Theme/'
+            FillColorDefaultName = 'Theme/'
+          end
+          object fgLabel7: TfgLabel
+            Text = '06:00'
+            ColorName = 'Colors\Eclipse'
+            Font.Family = 'Manrope'
+            Font.Size = 20.000000000000000000
+            Font.Style = [fsBold]
+            Font.Default = []
+            HorzAlign = Center
+            LookupName = 'time'
+            PositionMode = Relative
+            Position.X = 8.000000000000000000
+            Position.Y = 16.250000000000000000
+            RelativePosition.Left = 32.000000000000000000
+            RelativePosition.Top = 32.000000000000000000
+            Size.Width = 90.666664123535160000
+            Size.Height = 23.000000000000000000
+            SavedSizeWidth = 82s
+            SavedSizeHeight = 23s
+            ColorDefaultName = 'Theme\Text\Text'
+          end
+          object fgSwitch3: TfgSwitch
+            TintColorName = 'Colors\Eclipse'
+            OnChanged = fgSwitch2Changed
+            Alignment.AlignSelf = Center
+            LookupName = 'enabled'
+            PositionMode = Relative
+            Position.X = 31.333332061767580000
+            Position.Y = 55.750000000000000000
+            RelativePosition.Left = 24.000000000000000000
+            RelativePosition.Top = 8.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 26.000000000000000000
+            SavedSizeWidth = 44s
+            SavedSizeHeight = 26s
+            ColorDefaultName = 'Theme\Text\Text'
+          end
+        end
+      end
+    end
+    object lFooter: TfgLayout
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 298.000000000000000000
+      RelativePosition.Left = 224.000000000000000000
+      RelativePosition.Top = 184.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 60.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 60s
+      object btnAddNewReminder: TfgButton
+        Kind = Contained
+        Appearance.Text.Font.Family = 'Manrope'
+        Appearance.Text.Font.Size = 16.000000000000000000
+        Appearance.Text.Font.Style = [fsBold]
+        Appearance.Text.Font.Default = []
+        Appearance.Text.FontColorName = 'Theme\Text\Text'
+        Appearance.Border.CornerRadius = 12.000000000000000000
+        CharCase = Normal
+        Text = 'Add Reminder'
+        TintColorName = 'Theme\Primary\Color'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        RelativePosition.Left = -32.000000000000000000
+        RelativePosition.Top = 8.000000000000000000
+        Size.Width = 244.000000000000000000
+        Size.Height = 60.000000000000000000
+        OnTap = btnAddNewReminderTap
+        SavedSizeWidth = 120s
+        SavedSizeHeight = 36s
+      end
+      object btnClearAll: TfgButton
+        Kind = Outlined
+        Appearance.Icon.Location = Center
+        Appearance.Border.CornerRadius = 12.000000000000000000
+        IconName = 'Buttons\Icons\Alarm'
+        PositionMode = Relative
+        Position.X = 260.000000000000000000
+        RelativePosition.Left = 168.000000000000000000
+        RelativePosition.Top = 8.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 60.000000000000000000
+        Margins.Left = 16.000000000000000000
+        SavedSizeWidth = 60s
+        SavedSizeHeight = 36s
+      end
+    end
+  end
+end

@@ -1,0 +1,121 @@
+object FormMain: TFormMain
+  Toolbar = fgNavigationBar1
+  OnCreate = fgFormCreate
+  Size.Width = 360.000000000000000000
+  Size.Height = 590.000000000000000000
+  OnDestroy = fgFormDestroy
+  SavedSizeWidth = 360s
+  SavedSizeHeight = 590s
+  object fgNavigationBar1: TfgNavigationBar
+    ActionButtons = <
+      item
+        Title = 'Open'
+        VisibilityMode = AlwaysVisible
+        OnTap = fgNavigationBar1ActionButtons0Tap
+      end>
+    Title = 'EntityDAC Demo'
+    Alignment.AlignSelf = Stretch
+    RelativePosition.Left = 0.000000000000000000
+    RelativePosition.Top = 0.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 80.000000000000000000
+    SavedSizeWidth = 250s
+    SavedSizeHeight = 80s
+  end
+  object fgCollectionView1: TfgCollectionView
+    OnGetItemCount = fgCollectionView1GetItemCount
+    OnBindItem = fgCollectionView1BindItem
+    Alignment.FlexGrow = 1.000000000000000000
+    PositionMode = Relative
+    Position.Y = 80.000000000000000000
+    RelativePosition.Left = 72.000000000000000000
+    RelativePosition.Top = 168.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 510.000000000000000000
+    SavedSizeWidth = 200s
+    SavedSizeHeight = 400s
+    object fgCollectionView1_Styles: TfgCollectionViewStyles
+      SavedSizeWidth = 360s
+      SavedSizeHeight = 510s
+      object fgCollectionView1_Style1: TfgCollectionViewStyle
+        StyleName = 'Style-1'
+        AlignmentChildren.Direction = Column
+        Padding.Left = 16.000000000000000000
+        Padding.Right = 16.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 88.000000000000000000
+        HitTest = False
+        SavedSizeWidth = 360s
+        SavedSizeHeight = 88s
+        object fgLabel1: TfgLabel
+          Text = 'Overline'
+          Color = x99000000
+          CharCase = Upper
+          Font.Size = 10.000000000000000000
+          Font.Default = [Family, Style]
+          LinesCount = 1
+          VertAlign = Bottom
+          LookupName = 'overline'
+          PositionMode = Relative
+          Position.X = 16.000000000000000000
+          RelativePosition.Left = 0.000000000000000000
+          RelativePosition.Top = 0.000000000000000000
+          Size.Width = 328.000000000000000000
+          Size.Height = 24.000000000000000000
+          SavedSizeWidth = 82s
+          SavedSizeHeight = 24s
+          ColorDefaultName = 'Theme\Text\Secondary Text'
+        end
+        object fgLabel2: TfgLabel
+          Text = 'Three-line item'
+          Color = xDE000000
+          Font.Size = 16.000000000000000000
+          Font.Default = [Family, Style]
+          LinesCount = 1
+          VertAlign = Bottom
+          LookupName = 'primary'
+          PositionMode = Relative
+          Position.X = 16.000000000000000000
+          Position.Y = 24.000000000000000000
+          RelativePosition.Left = 0.000000000000000000
+          RelativePosition.Top = 0.000000000000000000
+          Size.Width = 328.000000000000000000
+          Size.Height = 20.000000000000000000
+          SavedSizeWidth = 82s
+          SavedSizeHeight = 20s
+          ColorDefaultName = 'Theme\Text\Text'
+        end
+        object fgLabel3: TfgLabel
+          Text = 'Secondary text Lorem ipsum dolor sit amet.'
+          Color = x99000000
+          LinesCount = 1
+          VertAlign = Bottom
+          Alignment.FlexGrow = 1.000000000000000000
+          LookupName = 'secondary'
+          PositionMode = Relative
+          Position.X = 16.000000000000000000
+          Position.Y = 44.000000000000000000
+          RelativePosition.Left = 0.000000000000000000
+          RelativePosition.Top = 0.000000000000000000
+          Size.Width = 328.000000000000000000
+          Size.Height = 28.000000000000000000
+          Margins.Bottom = 16.000000000000000000
+          SavedSizeWidth = 82s
+          SavedSizeHeight = 23s
+          ColorDefaultName = 'Theme\Text\Secondary Text'
+        end
+      end
+    end
+  end
+  object EntityConnection: TEntityConnection
+    Left = 8
+    Top = 545
+  end
+  object FDMoniCustomClientLink1: TFDMoniCustomClientLink
+    EventKinds = [ekCmdPrepare, ekCmdExecute, ekCmdDataIn]
+    OnOutput = FDMoniCustomClientLink1Output
+    Tracing = True
+    Left = 8
+    Top = 496
+  end
+end

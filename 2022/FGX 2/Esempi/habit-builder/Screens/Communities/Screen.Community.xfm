@@ -1,0 +1,230 @@
+inherited ScreenCommunity: TScreenCommunity
+  Size.Width = 424.000000000000000000
+  Size.Height = 450.000000000000000000
+  SavedSizeWidth = 424s
+  SavedSizeHeight = 450s
+  object cvPosts: TfgCollectionView
+    Padding.Bottom = 138.000000000000000000
+    OnGetItemCount = cvPostsGetItemCount
+    OnBindItem = cvPostsBindItem
+    Alignment.FlexGrow = 1.000000000000000000
+    PositionMode = Relative
+    RelativePosition.Left = 112.000000000000000000
+    RelativePosition.Top = 24.000000000000000000
+    Size.Width = 424.000000000000000000
+    Size.Height = 450.000000000000000000
+    SavedSizeWidth = 200s
+    SavedSizeHeight = 400s
+    object cvPosts_Styles: TfgCollectionViewStyles
+      SavedSizeWidth = 424s
+      SavedSizeHeight = 450s
+      object cvPosts_Style1: TfgCollectionViewStyle
+        StyleName = 'Style-1'
+        Padding.Top = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Size.Width = 424.000000000000000000
+        Size.Height = 181.000000000000000000
+        HitTest = False
+        SavedSizeWidth = 424s
+        SavedSizeHeight = 181s
+        object fgCardPanel1: TfgCardPanel
+          CornerRadius = 12.000000000000000000
+          Elevation = 0.000000000000000000
+          Alignment.FlexGrow = 1.000000000000000000
+          AlignmentChildren.Direction = Column
+          Padding.Left = 16.000000000000000000
+          Padding.Top = 16.000000000000000000
+          Padding.Right = 16.000000000000000000
+          Padding.Bottom = 16.000000000000000000
+          PositionMode = Relative
+          Position.X = 16.000000000000000000
+          Position.Y = 4.000000000000000000
+          RelativePosition.Left = 48.000000000000000000
+          RelativePosition.Top = 16.000000000000000000
+          Size.Width = 392.000000000000000000
+          Size.Height = 173.000000000000000000
+          Margins.Left = 16.000000000000000000
+          Margins.Right = 16.000000000000000000
+          SavedSizeWidth = 265s
+          SavedSizeHeight = 73s
+          object fgLayout1: TfgLayout
+            PositionMode = Relative
+            Position.X = 16.000000000000000000
+            Position.Y = 16.000000000000000000
+            RelativePosition.Left = 168.000000000000000000
+            RelativePosition.Top = 56.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 36.000000000000000000
+            SavedSizeWidth = 50s
+            SavedSizeHeight = 36s
+            object fgImage1: TfgImage
+              ImageName = 'Avatars\universal-universal10x'
+              LookupName = 'avatar'
+              PositionMode = Relative
+              RelativePosition.Left = 152.000000000000000000
+              RelativePosition.Top = -8.000000000000000000
+              Size.Width = 36.000000000000000000
+              Size.Height = 36.000000000000000000
+              SavedSizeWidth = 36s
+              SavedSizeHeight = 50s
+            end
+            object fgLayout3: TfgLayout
+              AlignmentChildren.Direction = Column
+              Alignment.FlexGrow = 1.000000000000000000
+              PositionMode = Relative
+              Position.X = 44.000000000000000000
+              RelativePosition.Left = 152.000000000000000000
+              RelativePosition.Top = -8.000000000000000000
+              Size.Width = 316.000000000000000000
+              Size.Height = 36.000000000000000000
+              Margins.Left = 8.000000000000000000
+              SavedSizeWidth = 50s
+              SavedSizeHeight = 50s
+              object fgLabel2: TfgLabel
+                Text = 'Jerome'
+                Font.Family = 'Manrope'
+                Font.Style = [fsBold]
+                Font.Default = [Size]
+                LookupName = 'username'
+                PositionMode = Relative
+                RelativePosition.Left = 120.000000000000000000
+                RelativePosition.Top = 0.000000000000000000
+                Size.Width = 316.000000000000000000
+                Size.Height = 18.000000000000000000
+                SavedSizeWidth = 82s
+                SavedSizeHeight = 18s
+                ColorDefaultName = 'Theme\Text\Text'
+              end
+              object fgLabel3: TfgLabel
+                Text = '41m ago'
+                ColorName = 'Colors\Eclipse 50'
+                Font.Family = 'Manrope Medium'
+                Font.Size = 12.000000000000000000
+                Font.Default = [Style]
+                LookupName = 'post-time'
+                PositionMode = Relative
+                Position.Y = 18.000000000000000000
+                RelativePosition.Left = 8.000000000000000000
+                RelativePosition.Top = 8.000000000000000000
+                Size.Width = 316.000000000000000000
+                Size.Height = 18.000000000000000000
+                SavedSizeWidth = 82s
+                SavedSizeHeight = 18s
+                ColorDefaultName = 'Theme\Text\Text'
+              end
+            end
+          end
+          object fgLine1: TfgLine
+            Fill.Kind = None
+            Stroke.ColorName = 'Theme\Text\Dividers'
+            PositionMode = Relative
+            Position.Y = 60.000000000000000000
+            RelativePosition.Left = 160.000000000000000000
+            RelativePosition.Top = 120.000000000000000000
+            Size.Width = 392.000000000000000000
+            Size.Height = 1.000000000000000000
+            Margins.Left = -16.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = -16.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            SavedSizeWidth = 50s
+            SavedSizeHeight = 1s
+            StrokeColorDefaultName = 'Theme/'
+            FillColorDefaultName = 'Theme/'
+          end
+          object fgLabel1: TfgLabel
+            Text = 
+              'Man, you'#39're my new guru! Viewing the lessons for a second time. ' +
+              'Thoroughly pleased. And impressed that you draw from scientific ' +
+              'literature in telling memorable...'
+            Font.Family = 'Manrope Medium'
+            Font.Size = 14.000000000000000000
+            Font.Default = [Style]
+            LinesCount = 3
+            LineBreak = WordWrap
+            Alignment.FlexGrow = 1.000000000000000000
+            LookupName = 'comment'
+            PositionMode = Relative
+            Position.X = 16.000000000000000000
+            Position.Y = 69.000000000000000000
+            RelativePosition.Left = 152.000000000000000000
+            RelativePosition.Top = 72.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 56.000000000000000000
+            SavedSizeWidth = 82s
+            SavedSizeHeight = 46s
+            ColorDefaultName = 'Theme\Text\Text'
+          end
+          object fgLayout2: TfgLayout
+            AlignmentChildren.JustifyContent = FlexEnd
+            PositionMode = Relative
+            Position.X = 16.000000000000000000
+            Position.Y = 133.000000000000000000
+            RelativePosition.Left = 176.000000000000000000
+            RelativePosition.Top = 64.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 24.000000000000000000
+            Margins.Top = 8.000000000000000000
+            SavedSizeWidth = 50s
+            SavedSizeHeight = 24s
+            object fgImage2: TfgImage
+              ImageName = 'Buttons\Icons\Likes'
+              PositionMode = Relative
+              Position.X = 261.000000000000000000
+              RelativePosition.Left = 152.000000000000000000
+              RelativePosition.Top = -16.000000000000000000
+              Size.Width = 24.000000000000000000
+              Size.Height = 24.000000000000000000
+              SavedSizeWidth = 24s
+              SavedSizeHeight = 50s
+            end
+            object fgLabel4: TfgLabel
+              Text = '3.1k'
+              Font.Family = 'Manrope Medium'
+              Font.Size = 8.000000000000000000
+              Font.Default = [Style]
+              LookupName = 'likes'
+              PositionMode = Relative
+              Position.X = 285.000000000000000000
+              RelativePosition.Left = -16.000000000000000000
+              RelativePosition.Top = 16.000000000000000000
+              Size.Width = 31.000000000000000000
+              Size.Height = 24.000000000000000000
+              SavedSizeWidth = 31s
+              SavedSizeHeight = 23s
+              ColorDefaultName = 'Theme\Text\Text'
+            end
+            object fgImage3: TfgImage
+              ImageName = 'Buttons\Icons\Comments'
+              PositionMode = Relative
+              Position.X = 316.000000000000000000
+              RelativePosition.Left = 16.000000000000000000
+              RelativePosition.Top = -16.000000000000000000
+              Size.Width = 24.000000000000000000
+              Size.Height = 24.000000000000000000
+              SavedSizeWidth = 24s
+              SavedSizeHeight = 50s
+            end
+            object fgLabel5: TfgLabel
+              Text = '22'
+              ColorName = 'Colors\Eclipse 50'
+              Font.Family = 'Manrope Medium'
+              Font.Size = 8.000000000000000000
+              Font.Default = [Style]
+              LookupName = 'comments'
+              PositionMode = Relative
+              Position.X = 340.000000000000000000
+              RelativePosition.Left = -8.000000000000000000
+              RelativePosition.Top = 24.000000000000000000
+              Size.Width = 20.000000000000000000
+              Size.Height = 24.000000000000000000
+              SavedSizeWidth = 20s
+              SavedSizeHeight = 23s
+              ColorDefaultName = 'Theme\Text\Text'
+            end
+          end
+        end
+      end
+    end
+  end
+end

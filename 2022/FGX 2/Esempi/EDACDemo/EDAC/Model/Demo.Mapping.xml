@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Database="Demo" Name="Demo" EntityContextName="DemoContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="43911a16-ec4b-49fd-9b91-37c6807b7304" Class="Demo" xmlns="http://schemas.devart.com/entitydac/mapping">
+  <Table Name="DEPT" Member="Depts">
+    <Type Name="Dept" ed:Guid="4d873a5e-7d30-48ff-9b02-7697397c6a8e">
+      <Column Name="DEPTNO" Member="Deptno" Type="Integer" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="436755a6-7abc-400f-ae23-a4258374888c">
+        <Generator Name="Increment">
+          <GeneratorParameter Name="GeneratorFires" Value="OnCreate" />
+        </Generator>
+      </Column>
+      <Column Name="DNAME" Member="Dname" Type="String" CanBeNull="true" UpdateCheck="Never" MaxLength="14" ed:ValidateMaxLength="14" ed:ValidateRequired="false" ed:Guid="9888638b-35eb-4a37-b8ec-b9ec2223a0da" />
+      <Column Name="LOC" Member="Loc" Type="String" CanBeNull="true" UpdateCheck="Never" MaxLength="13" ed:ValidateMaxLength="13" ed:ValidateRequired="false" ed:Guid="ad559888-351a-4fd1-b898-856e0423203f" />
+      <Association Name="Dept_Emp" ed:AssociationGuid="49c12b3b-e50c-4139-9fb9-f27e9f95963d" Member="Emps" ed:Guid="fb2572d2-0547-4351-b987-3766bf0d8732" ThisKey="Deptno" OtherKey="Deptno" Type="Emp" />
+    </Type>
+  </Table>
+  <Table Name="EMP" Member="Emps">
+    <Type Name="Emp" ed:Guid="d066a14a-4ce1-4ee0-8776-3977678d9810">
+      <Column Name="EMPNO" Member="Empno" Type="Integer" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="d1dc51d3-6f7c-4d1c-bea5-367e91518a0a">
+        <Generator Name="Increment">
+          <GeneratorParameter Name="GeneratorFires" Value="OnCreate" />
+        </Generator>
+      </Column>
+      <Column Name="ENAME" Member="Ename" Type="String" CanBeNull="true" UpdateCheck="Never" MaxLength="10" ed:ValidateMaxLength="10" ed:ValidateRequired="false" ed:Guid="cd6120e3-307c-49cb-b010-4233862cd399" />
+      <Column Name="JOB" Member="Job" Type="String" CanBeNull="true" UpdateCheck="Never" MaxLength="9" ed:ValidateMaxLength="9" ed:ValidateRequired="false" ed:Guid="6736fef9-2620-497f-9e26-823e01cf9c84" />
+      <Column Name="MGR" Member="Mgr" Type="Integer" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="3791387a-1f29-41a6-b357-86225052b13e" />
+      <Column Name="HIREDATE" Member="Hiredate" Type="DateTime" CanBeNull="true" UpdateCheck="Never" Precision="0" ed:ValidateRequired="false" ed:Guid="f466f3d6-06cd-4629-8341-f889323332bd" />
+      <Column Name="SAL" Member="Sal" Type="Double" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a6c23bbf-7843-44d4-8391-d5a17db53c8a" />
+      <Column Name="COMM" Member="Comm" Type="Double" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a39e34f3-060e-48bb-9c19-2e5f7c845841" />
+      <Column Name="DEPTNO" Member="Deptno" Type="Integer" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="c4efefe0-4256-4fa1-9945-b807a2a719b6" />
+      <Association Name="Dept_Emp" ed:AssociationGuid="49c12b3b-e50c-4139-9fb9-f27e9f95963d" Member="Dept" ed:Guid="2054fb37-9024-410c-97d7-b22cf7ea8f43" UpdateRule="Cascade" ThisKey="Deptno" OtherKey="Deptno" Type="Dept" DeleteRule="Cascade" Cascade="true" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,64 @@
+inherited FrameDay: TFrameDay
+  AlignmentChildren.JustifyContent = Center
+  AlignmentChildren.AlignItems = Center
+  Size.Width = 107.000000000000000000
+  Size.Height = 85.000000000000000000
+  SavedSizeWidth = 107s
+  SavedSizeHeight = 85s
+  object cpDayEtalon: TfgCardPanel
+    CornerRadius = 12.000000000000000000
+    Elevation = 0.000000000000000000
+    AlignmentChildren.Direction = Column
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 8.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 8.000000000000000000
+    PositionMode = Relative
+    Position.X = 28.500000000000000000
+    Position.Y = 17.500000000000000000
+    RelativePosition.Left = 136.000000000000000000
+    RelativePosition.Top = 0.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    SavedSizeWidth = 50s
+    SavedSizeHeight = 50s
+    object lDay: TfgLabel
+      Text = 'MON'
+      ColorName = 'Colors\Eclipse 50'
+      Font.Family = 'Manrope'
+      Font.Size = 10.000000000000000000
+      Font.Style = [fsBold]
+      Font.Default = []
+      HorzAlign = Center
+      PositionMode = Relative
+      Position.X = 4.000000000000000000
+      Position.Y = 8.000000000000000000
+      RelativePosition.Left = -16.000000000000000000
+      RelativePosition.Top = 16.000000000000000000
+      Size.Width = 42.000000000000000000
+      Size.Height = 14.000000000000000000
+      SavedSizeWidth = 82s
+      SavedSizeHeight = 14s
+      ColorDefaultName = 'Theme\Text\Text'
+    end
+    object lNumber: TfgLabel
+      Text = '18'
+      Font.Family = 'Manrope'
+      Font.Size = 16.000000000000000000
+      Font.Style = [fsBold]
+      Font.Default = []
+      Trimming = None
+      HorzAlign = Center
+      PositionMode = Relative
+      Position.X = 4.000000000000000000
+      Position.Y = 22.000000000000000000
+      RelativePosition.Left = 8.000000000000000000
+      RelativePosition.Top = 8.000000000000000000
+      Size.Width = 42.000000000000000000
+      Size.Height = 19.000000000000000000
+      SavedSizeWidth = 82s
+      SavedSizeHeight = 19s
+      ColorDefaultName = 'Theme\Text\Text'
+    end
+  end
+end

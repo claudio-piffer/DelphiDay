@@ -1,0 +1,405 @@
+inherited ScreenNewHabit: TScreenNewHabit
+  SystemStatusBar.Visibility = VisibleAndOverlap
+  Size.Width = 471.000000000000000000
+  Size.Height = 629.000000000000000000
+  HitTest = False
+  SavedSizeWidth = 471s
+  SavedSizeHeight = 629s
+  object fgVerticalScrollBox1: TfgVerticalScrollBox
+    AlignmentChildren.Direction = Column
+    Padding.Left = 20.000000000000000000
+    Padding.Right = 20.000000000000000000
+    Alignment.FlexGrow = 1.000000000000000000
+    PositionMode = Relative
+    RelativePosition.Left = 232.000000000000000000
+    RelativePosition.Top = 328.000000000000000000
+    Size.Width = 471.000000000000000000
+    Size.Height = 629.000000000000000000
+    SavedSizeWidth = 50s
+    SavedSizeHeight = 50s
+    object fgCardPanel1: TfgCardPanel
+      CornerRadius = 12.000000000000000000
+      Elevation = 0.000000000000000000
+      Padding.Left = 20.000000000000000000
+      Padding.Right = 20.000000000000000000
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      RelativePosition.Left = 208.000000000000000000
+      RelativePosition.Top = 0.000000000000000000
+      Size.Width = 431.000000000000000000
+      Size.Height = 50.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 50s
+      object fgEdit1: TfgEdit
+        TextPrompt = 'Enter habit name'
+        BorderStyle = None
+        TextPromptColorName = 'Colors\Eclipse 50'
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 20.000000000000000000
+        RelativePosition.Left = -24.000000000000000000
+        RelativePosition.Top = 8.000000000000000000
+        Size.Width = 391.000000000000000000
+        Size.Height = 50.000000000000000000
+        SavedSizeWidth = 97s
+        SavedSizeHeight = 40s
+      end
+    end
+    object fgCardPanel3: TfgCardPanel
+      CornerRadius = 12.000000000000000000
+      Elevation = 0.000000000000000000
+      AlignmentChildren.Direction = Column
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 66.000000000000000000
+      RelativePosition.Left = 208.000000000000000000
+      RelativePosition.Top = 216.000000000000000000
+      Size.Width = 431.000000000000000000
+      Size.Height = 134.000000000000000000
+      Margins.Top = 16.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 134s
+      object fgLayout2: TfgLayout
+        PositionMode = Relative
+        Position.X = 20.000000000000000000
+        RelativePosition.Left = 192.000000000000000000
+        RelativePosition.Top = 40.000000000000000000
+        Size.Width = 411.000000000000000000
+        Size.Height = 50.000000000000000000
+        Margins.Left = 20.000000000000000000
+        SavedSizeWidth = 50s
+        SavedSizeHeight = 50s
+        object fgLabel1: TfgLabel
+          Text = 'Habit Frequency'
+          Font.Family = 'Manrope Medium'
+          Font.Size = 16.000000000000000000
+          Font.Default = [Style]
+          Alignment.FlexGrow = 1.000000000000000000
+          PositionMode = Relative
+          RelativePosition.Left = -16.000000000000000000
+          RelativePosition.Top = 16.000000000000000000
+          Size.Width = 291.000000000000000000
+          Size.Height = 50.000000000000000000
+          SavedSizeWidth = 82s
+          SavedSizeHeight = 23s
+          ColorDefaultName = 'Theme\Text\Text'
+        end
+        object fgButton1: TfgButton
+          Kind = Text
+          Appearance.Icon.Location = Right
+          Appearance.Text.Font.Family = 'Manrope'
+          Appearance.Text.Font.Size = 16.000000000000000000
+          Appearance.Text.Font.Style = [fsBold]
+          Appearance.Text.Font.Default = []
+          CharCase = Normal
+          Text = 'Custom'
+          IconName = 'Buttons\Icons\Next'
+          TintColorName = 'Theme\Primary\Color'
+          PositionMode = Relative
+          Position.X = 291.000000000000000000
+          RelativePosition.Left = -16.000000000000000000
+          RelativePosition.Top = -8.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 50.000000000000000000
+          SavedSizeWidth = 120s
+          SavedSizeHeight = 36s
+        end
+      end
+      object fgCollectionView1: TfgCollectionView
+        ColumnsCount = 7
+        OnGetItemCount = fgCollectionView1GetItemCount
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.Y = 50.000000000000000000
+        RelativePosition.Left = 112.000000000000000000
+        RelativePosition.Top = -136.000000000000000000
+        Size.Width = 431.000000000000000000
+        Size.Height = 84.000000000000000000
+        SavedSizeWidth = 200s
+        SavedSizeHeight = 400s
+        object fgCollectionView1_Styles: TfgCollectionViewStyles
+          SavedSizeWidth = 455s
+          SavedSizeHeight = 84s
+          object fgCollectionView1_Style1: TfgCollectionViewStyle
+            StyleName = 'Day'
+            AlignmentChildren.Direction = Column
+            AlignmentChildren.AlignItems = Center
+            Size.Width = 61.571430206298830000
+            Size.Height = 66.000000000000000000
+            HitTest = False
+            SavedSizeWidth = 61.5714302062988s
+            SavedSizeHeight = 66s
+            object lDay: TfgLabel
+              Text = 'MON'
+              ColorName = 'Colors\Eclipse 50'
+              Font.Family = 'Manrope'
+              Font.Size = 10.000000000000000000
+              Font.Default = [Style]
+              HorzAlign = Center
+              LookupName = 'day'
+              PositionMode = Relative
+              Position.X = 7.785715103149414000
+              RelativePosition.Left = 0.000000000000000000
+              RelativePosition.Top = 0.000000000000000000
+              Size.Width = 46.000000000000000000
+              Size.Height = 14.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              SavedSizeWidth = 46s
+              SavedSizeHeight = 14s
+              ColorDefaultName = 'Theme\Text\Text'
+            end
+            object cpBackground: TfgCardPanel
+              CornerRadius = 12.000000000000000000
+              BackgroundColorName = 'Colors\Morning'
+              Elevation = 0.000000000000000000
+              Padding.Left = 2.000000000000000000
+              Padding.Top = 2.000000000000000000
+              Padding.Right = 2.000000000000000000
+              Padding.Bottom = 2.000000000000000000
+              PositionMode = Relative
+              Position.X = 11.785715103149410000
+              Position.Y = 18.000000000000000000
+              RelativePosition.Left = 72.000000000000000000
+              RelativePosition.Top = 48.000000000000000000
+              Size.Width = 38.000000000000000000
+              Size.Height = 38.000000000000000000
+              SavedSizeWidth = 38s
+              SavedSizeHeight = 38s
+              object fgSvgPath1: TfgSvgPath
+                Stroke.Kind = None
+                Alignment.FlexGrow = 1.000000000000000000
+                LookupName = 'fill'
+                PositionMode = Relative
+                Position.X = 2.000000000000000000
+                Position.Y = 2.000000000000000000
+                RelativePosition.Left = 288.000000000000000000
+                RelativePosition.Top = 248.000000000000000000
+                Size.Width = 34.000000000000000000
+                Size.Height = 34.000000000000000000
+                SavedSizeWidth = 50s
+                SavedSizeHeight = 50s
+                StrokeColorDefaultName = 'Theme/'
+                FillColorDefaultName = 'Theme/'
+              end
+            end
+          end
+        end
+      end
+    end
+    object fgCardPanel4: TfgCardPanel
+      CornerRadius = 12.000000000000000000
+      Elevation = 0.000000000000000000
+      Padding.Left = 20.000000000000000000
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 216.000000000000000000
+      RelativePosition.Left = 216.000000000000000000
+      RelativePosition.Top = 224.000000000000000000
+      Size.Width = 431.000000000000000000
+      Size.Height = 50.000000000000000000
+      Margins.Top = 16.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 50s
+      object fgLabel2: TfgLabel
+        Text = 'Reminder'
+        Font.Family = 'Manrope Medium'
+        Font.Size = 16.000000000000000000
+        Font.Default = [Style]
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 20.000000000000000000
+        RelativePosition.Left = -16.000000000000000000
+        RelativePosition.Top = 16.000000000000000000
+        Size.Width = 291.000000000000000000
+        Size.Height = 50.000000000000000000
+        SavedSizeWidth = 82s
+        SavedSizeHeight = 23s
+        ColorDefaultName = 'Theme\Text\Text'
+      end
+      object fgButton2: TfgButton
+        Kind = Text
+        Appearance.Icon.Location = Right
+        Appearance.Text.Font.Family = 'Manrope'
+        Appearance.Text.Font.Size = 16.000000000000000000
+        Appearance.Text.Font.Style = [fsBold]
+        Appearance.Text.Font.Default = []
+        CharCase = Normal
+        Text = '10:00AM'
+        IconName = 'Buttons\Icons\Next'
+        TintColorName = 'Theme\Primary\Color'
+        PositionMode = Relative
+        Position.X = 311.000000000000000000
+        RelativePosition.Left = -16.000000000000000000
+        RelativePosition.Top = -8.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 50.000000000000000000
+        OnTap = fgButton2Tap
+        SavedSizeWidth = 120s
+        SavedSizeHeight = 36s
+      end
+    end
+    object fgCardPanel5: TfgCardPanel
+      CornerRadius = 12.000000000000000000
+      Elevation = 0.000000000000000000
+      Padding.Left = 20.000000000000000000
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 282.000000000000000000
+      RelativePosition.Left = 224.000000000000000000
+      RelativePosition.Top = 232.000000000000000000
+      Size.Width = 431.000000000000000000
+      Size.Height = 50.000000000000000000
+      Margins.Top = 16.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 50s
+      object fgLabel3: TfgLabel
+        Text = 'Notification'
+        Font.Family = 'Manrope Medium'
+        Font.Size = 16.000000000000000000
+        Font.Default = [Style]
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        Position.X = 20.000000000000000000
+        RelativePosition.Left = -16.000000000000000000
+        RelativePosition.Top = 16.000000000000000000
+        Size.Width = 347.000000000000000000
+        Size.Height = 50.000000000000000000
+        SavedSizeWidth = 82s
+        SavedSizeHeight = 23s
+        ColorDefaultName = 'Theme\Text\Text'
+      end
+      object fgSwitch1: TfgSwitch
+        TintColorName = 'Colors\Eclipse'
+        PositionMode = Relative
+        Position.X = 367.000000000000000000
+        RelativePosition.Left = 184.000000000000000000
+        RelativePosition.Top = 16.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 50.000000000000000000
+        Margins.Right = 20.000000000000000000
+        SavedSizeWidth = 44s
+        SavedSizeHeight = 26s
+        ColorDefaultName = 'Theme\Text\Text'
+      end
+    end
+    object fgLayout1: TfgLayout
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 332.000000000000000000
+      RelativePosition.Left = 208.000000000000000000
+      RelativePosition.Top = 288.000000000000000000
+      Size.Width = 431.000000000000000000
+      Size.Height = 120.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 120s
+    end
+    object FooterContainer: TfgLayout
+      AlignmentChildren.Direction = ColumnReverse
+      PositionMode = Relative
+      Position.X = 20.000000000000000000
+      Position.Y = 452.000000000000000000
+      RelativePosition.Left = 216.000000000000000000
+      RelativePosition.Top = 328.000000000000000000
+      Size.Width = 431.000000000000000000
+      Size.Height = 229.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      SavedSizeWidth = 50s
+      SavedSizeHeight = 229s
+      object fgCardPanel6: TfgCardPanel
+        CornerRadius = 12.000000000000000000
+        Elevation = 0.000000000000000000
+        AlignmentChildren.Direction = Column
+        AlignmentChildren.AlignItems = Center
+        Padding.Left = 30.000000000000000000
+        Padding.Right = 30.000000000000000000
+        PositionMode = Relative
+        Position.Y = 46.000000000000000000
+        RelativePosition.Left = 152.000000000000000000
+        RelativePosition.Top = 536.000000000000000000
+        Size.Width = 431.000000000000000000
+        Size.Height = 183.000000000000000000
+        SavedSizeWidth = 60s
+        SavedSizeHeight = 183s
+        object fgLabel4: TfgLabel
+          Text = 'Start this habit'
+          CharCase = Upper
+          Font.Family = 'Klasik'
+          Font.Size = 24.000000000000000000
+          Font.Style = [fsBold]
+          Font.Default = []
+          Trimming = None
+          HorzAlign = Center
+          Alignment.AlignSelf = Stretch
+          PositionMode = Relative
+          Position.X = 30.000000000000000000
+          Position.Y = 46.000000000000000000
+          RelativePosition.Left = -16.000000000000000000
+          RelativePosition.Top = 16.000000000000000000
+          Size.Width = 371.000000000000000000
+          Size.Height = 32.000000000000000000
+          Margins.Top = 46.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          SavedSizeWidth = 82s
+          SavedSizeHeight = 32s
+          ColorDefaultName = 'Theme\Text\Text'
+        end
+        object fgLabel5: TfgLabel
+          Text = 'ullamco laboris nisi ut aliquip ex ea commodo consequat dolore. '
+          ColorName = 'Colors\Eclipse 50'
+          Font.Family = 'Manrope Medium'
+          Font.Default = [Size, Style]
+          LineBreak = WordWrap
+          HorzAlign = Center
+          VertAlign = Top
+          Alignment.AlignSelf = Stretch
+          PositionMode = Relative
+          Position.X = 30.000000000000000000
+          Position.Y = 86.000000000000000000
+          RelativePosition.Left = 8.000000000000000000
+          RelativePosition.Top = 8.000000000000000000
+          Size.Width = 371.000000000000000000
+          Size.Height = 47.000000000000000000
+          Margins.Top = 4.000000000000000000
+          SavedSizeWidth = 82s
+          SavedSizeHeight = 47s
+          ColorDefaultName = 'Theme\Text\Text'
+        end
+        object fgImage2: TfgImage
+          ImageName = 'Buttons\Icons\Arrow down'
+          PositionMode = Relative
+          Position.X = 190.500000000000000000
+          Position.Y = 133.000000000000000000
+          RelativePosition.Left = 16.000000000000000000
+          RelativePosition.Top = -16.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          SavedSizeWidth = 50s
+          SavedSizeHeight = 50s
+        end
+      end
+      object fgLayout4: TfgLayout
+        AlignmentChildren.JustifyContent = Center
+        Alignment.FlexGrow = 1.000000000000000000
+        PositionMode = Relative
+        RelativePosition.Left = 208.000000000000000000
+        RelativePosition.Top = 88.000000000000000000
+        Size.Width = 431.000000000000000000
+        Size.Height = 91.000000000000000000
+        Margins.Bottom = -45.000000000000000000
+        SavedSizeWidth = 50s
+        SavedSizeHeight = 53s
+        object fgImage1: TfgImage
+          ImageName = 'Avatars\Girl'
+          PositionMode = Relative
+          Position.X = 180.500000000000000000
+          RelativePosition.Left = 192.000000000000000000
+          RelativePosition.Top = 72.000000000000000000
+          Size.Width = 70.000000000000000000
+          Size.Height = 91.000000000000000000
+          SavedSizeWidth = 70s
+          SavedSizeHeight = 70s
+        end
+      end
+    end
+  end
+end
